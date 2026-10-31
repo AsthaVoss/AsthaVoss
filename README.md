@@ -8,7 +8,6 @@
 </p>
 
 ---
-
 ### Hi! 👋
 
 I’m a physics student interested in astrophysics, analytical reasoning, and scientific research. I’m also exploring medical AI, biomedical imaging, and explainable machine learning.
@@ -18,28 +17,22 @@ I’m a physics student interested in astrophysics, analytical reasoning, and sc
 - 🧠 **Studying** — machine learning, deep learning, and scientific computing
 - 🌌 **Also curious about** — astrophysics and analytical problem-solving
 
-### Research interests
-
-| Area | Topics |
+| Research area | Interests |
 | --- | --- |
 | Medical AI | Biomedical AI, radiology, medical image analysis |
 | Machine learning | Deep learning, explainable AI |
 | Scientific research | Scientific computing, analytical reasoning |
 | Physics | Astrophysics |
 
-**Current public repository**
-
-| Repository | Description |
-| --- | --- |
-| [AsthaVoss](https://github.com/AsthaVoss/AsthaVoss) | This profile repository; a place to share research interests and future public work. |
-
 ---
-
-### GitHub activity
+### 🏆 GitHub
 
 <p align="center">
-  <a href="https://github.com/AsthaVoss?tab=overview">
-    <img height="160" alt="AsthaVoss contribution streak" src="https://streak-stats.demolab.com/?user=AsthaVoss&hide_border=true&background=161210&stroke=3a2f26&ring=f7ddb4&fire=f7ddb4&currStreakLabel=f7ddb4&sideLabels=d9cbbb&currStreakNum=f5ece1&sideNums=f5ece1&dates=8c7d6c">
+  <a href="https://github.com/AsthaVoss">
+    <img width="48%" alt="AsthaVoss GitHub statistics" src="https://raw.githubusercontent.com/AsthaVoss/AsthaVoss/output/github.svg">
+  </a>
+  <a href="https://github.com/AsthaVoss">
+    <img width="48%" alt="AsthaVoss contribution streak" src="https://streak-stats.demolab.com/?user=AsthaVoss&hide_border=true&background=161210&stroke=3a2f26&ring=f7ddb4&fire=f7ddb4&currStreakLabel=f7ddb4&sideLabels=d9cbbb&currStreakNum=f5ece1&sideNums=f5ece1&dates=8c7d6c">
   </a>
 </p>
 
