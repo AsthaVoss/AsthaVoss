@@ -1,36 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195"
-     width="500" height="195" role="img" aria-label="GitHub: 5,801 stars earned, 35,577 contributions in the last year.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195" width="500" height="195" role="img" aria-label="GitHub: 5,801 stars earned, 35,577 contributions in the last year.">
   <title>GitHub: 5,801 stars earned, 35,577 contributions in the last year.</title>
   <defs>
-    <linearGradient id="gh-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1d1714"/>
-      <stop offset="100%" stop-color="#171210"/>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe6f2" />
+      <stop offset="50%" stop-color="#ffcce4" />
+      <stop offset="100%" stop-color="#ffb3d9" />
     </linearGradient>
-    <clipPath id="gh-card">
-      <rect x="0" y="0" width="500" height="195" rx="12"/>
-    </clipPath>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fff0f7" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e63982" />
+      <stop offset="100%" stop-color="#ff80b5" />
+    </linearGradient>
+    <linearGradient id="bowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff85b8" />
+      <stop offset="100%" stop-color="#e63982" />
+    </linearGradient>
   </defs>
 
-  <style><![CDATA[
-    .h { font: 700 13px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #f7ddb4; letter-spacing: 2px; }
-    .v { font: 700 30px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #f5ece1; }
-    .l { font: 600 11px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #cbbdad; letter-spacing: 1.3px; }
-    /* No animation anywhere: GitHub renders SVG-in-<img> as a static frame. */
-  ]]></style>
+  <rect x="1" y="1" width="498" height="193" rx="14" fill="url(#bgGrad)" stroke="#ff66a3" stroke-width="2" />
 
-  <g clip-path="url(#gh-card)">
-    <rect x="0" y="0" width="500" height="195" fill="url(#gh-bg)"/>
-    <text class="h" x="28" y="40">GITHUB</text>
-    <rect x="28" y="52" width="40" height="2" rx="1" fill="#f7ddb4"/>
-    <text class="v" x="28" y="96">5,801</text>
-    <text class="l" x="28" y="116">STARS EARNED</text>
-    <text class="v" x="268" y="96">35,577</text>
-    <text class="l" x="268" y="116">CONTRIBUTIONS · 1Y</text>
-    <text class="v" x="28" y="156">5,072</text>
-    <text class="l" x="28" y="176">COMMITS · 1Y</text>
-    <text class="v" x="268" y="156">1,627</text>
-    <text class="l" x="268" y="176">PULL REQUESTS · 1Y</text>
+  <circle cx="445" cy="30" r="65" fill="#ffffff" fill-opacity="0.35" />
+  <circle cx="55" cy="165" r="55" fill="#ffffff" fill-opacity="0.3" />
+  <circle cx="250" cy="95" r="80" fill="#ffffff" fill-opacity="0.25" />
+
+  <rect x="8" y="8" width="484" height="179" rx="10" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="5,4" />
+
+  <path d="M455,16 C456,21 457,22 462,23 C457,24 456,25 455,30 C454,25 453,24 448,23 C453,22 454,21 455,16 Z" fill="#ffffff" />
+  <path d="M475,28 C475.6,31 476.4,31.8 479.5,32.5 C476.4,33.2 475.6,34 475,37 C474.4,34 473.6,33.2 470.5,32.5 C473.6,31.8 474.4,31 475,28 Z" fill="#ffffff" />
+  <path d="M320,18 C320.6,21 321.4,21.8 324.5,22.5 C321.4,23.2 320.6,24 320,27 C319.4,24 318.6,23.2 315.5,22.5 C318.6,21.8 319.4,21 320,18 Z" fill="#ffffff" />
+  <path d="M425,25 C423,22 419,22.5 419,25.5 C419,28.5 425,31 425,32.5 C425,31 431,28.5 431,25.5 C431,22.5 427,22 425,25 Z" fill="#ff66a3" fill-opacity="0.5" />
+  <path d="M210,23 C208.5,20.5 205.5,21 205.5,23.5 C205.5,26 210,28 210,29 C210,28 214.5,26 214.5,23.5 C214.5,21 211.5,20.5 210,23 Z" fill="#ff66a3" fill-opacity="0.45" />
+
+  <g transform="translate(32, 26)">
+    <path d="M-2,6 L-7,15 L-2,13 L1,8 Z" fill="#e63982" />
+    <path d="M6,6 L11,15 L6,13 L3,8 Z" fill="#e63982" />
+    <path d="M1,4 C-7,-3 -12,4 -7,9 C-4,11 0,8 1,5 Z" fill="url(#bowGrad)" stroke="#b31b59" stroke-width="1.2" />
+    <path d="M3,4 C11,-3 16,4 11,9 C8,11 4,8 3,5 Z" fill="url(#bowGrad)" stroke="#b31b59" stroke-width="1.2" />
+    <circle cx="2" cy="5" r="2.8" fill="#ffe6f2" stroke="#b31b59" stroke-width="1.2" />
   </g>
-  <rect x="0.5" y="0.5" width="499" height="194" rx="12"
-        fill="none" stroke="#4a3c31" stroke-width="1"/>
+
+  <text x="54" y="35" fill="#b31b59" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" letter-spacing="2.5">GITHUB</text>
+
+  <rect x="22" y="44" width="75" height="3" rx="1.5" fill="url(#accentGrad)" />
+  <circle cx="105" cy="45.5" r="2" fill="#ff66a3" />
+  <path d="M115,44 C113.5,42 111,42.5 111,44.8 C111,46.8 115,48.8 115,49.8 C115,48.8 119,46.8 119,44.8 C119,42.5 116.5,42 115,44 Z" fill="#e63982" />
+  <circle cx="125" cy="45.5" r="2" fill="#ff66a3" />
+  <line x1="133" y1="45.5" x2="478" y2="45.5" stroke="#ff85b8" stroke-width="1.2" stroke-dasharray="3,4" />
+
+  <rect x="22" y="58" width="220" height="58" rx="11" fill="#ff99c2" fill-opacity="0.35" />
+  <rect x="20" y="55" width="220" height="58" rx="11" fill="url(#cardGrad)" stroke="#ffffff" stroke-width="1.8" />
+  <text x="36" y="88" fill="#99144a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="27" font-weight="800">5,801</text>
+  <text x="36" y="105" fill="#d9387a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.4">STARS EARNED</text>
+  <g transform="translate(210, 82)">
+    <path d="M0,-12 L3.5,-3.8 L12.4,-2.8 L5.5,3.1 L7.7,11.8 L0,7 L-7.7,11.8 L-5.5,3.1 L-12.4,-2.8 L-3.5,-3.8 Z" fill="#ffb3d9" stroke="#e63982" stroke-width="1.5" stroke-linejoin="round" />
+    <circle cx="-2.5" cy="-1" r="1.2" fill="#99144a" />
+    <circle cx="2.5" cy="-1" r="1.2" fill="#99144a" />
+    <path d="M-1.5,2 Q0,3.5 1.5,2" fill="none" stroke="#99144a" stroke-width="1.1" stroke-linecap="round" />
+  </g>
+
+  <rect x="260" y="58" width="220" height="58" rx="11" fill="#ff99c2" fill-opacity="0.35" />
+  <rect x="258" y="55" width="220" height="58" rx="11" fill="url(#cardGrad)" stroke="#ffffff" stroke-width="1.8" />
+  <text x="274" y="88" fill="#99144a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="27" font-weight="800">35,577</text>
+  <text x="274" y="105" fill="#d9387a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.4">CONTRIBUTIONS · 1Y</text>
+  <g transform="translate(448, 76)">
+    <path d="M0,4 C-4.5,-2.5 -12,-0.5 -12,6 C-12,11.5 0,16.5 0,19 C0,16.5 12,11.5 12,6 C12,-0.5 4.5,-2.5 0,4 Z" fill="#ffb3d9" stroke="#e63982" stroke-width="1.5" stroke-linejoin="round" />
+    <path d="M-6,4 C-6,2 -3.5,2 -2.5,3.5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" />
+  </g>
+
+  <rect x="22" y="126" width="220" height="58" rx="11" fill="#ff99c2" fill-opacity="0.35" />
+  <rect x="20" y="123" width="220" height="58" rx="11" fill="url(#cardGrad)" stroke="#ffffff" stroke-width="1.8" />
+  <text x="36" y="156" fill="#99144a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="27" font-weight="800">5,072</text>
+  <text x="36" y="173" fill="#d9387a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.4">COMMITS · 1Y</text>
+  <g transform="translate(210, 151)">
+    <circle cx="0" cy="-6.5" r="4.2" fill="#ffb3d9" stroke="#e63982" stroke-width="1.3" />
+    <circle cx="6.2" cy="-2" r="4.2" fill="#ffb3d9" stroke="#e63982" stroke-width="1.3" />
+    <circle cx="3.8" cy="5.2" r="4.2" fill="#ffb3d9" stroke="#e63982" stroke-width="1.3" />
+    <circle cx="-3.8" cy="5.2" r="4.2" fill="#ffb3d9" stroke="#e63982" stroke-width="1.3" />
+    <circle cx="-6.2" cy="-2" r="4.2" fill="#ffb3d9" stroke="#e63982" stroke-width="1.3" />
+    <circle cx="0" cy="0" r="3.2" fill="#fff0f7" stroke="#e63982" stroke-width="1.2" />
+  </g>
+
+  <rect x="260" y="126" width="220" height="58" rx="11" fill="#ff99c2" fill-opacity="0.35" />
+  <rect x="258" y="123" width="220" height="58" rx="11" fill="url(#cardGrad)" stroke="#ffffff" stroke-width="1.8" />
+  <text x="274" y="156" fill="#99144a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="27" font-weight="800">1,627</text>
+  <text x="274" y="173" fill="#d9387a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.4">PULL REQUESTS · 1Y</text>
+  <g transform="translate(448, 151)">
+    <rect x="-11" y="-8" width="22" height="16" rx="2.5" fill="#ffb3d9" stroke="#e63982" stroke-width="1.4" />
+    <path d="M-10.5,-7.5 L0,1 L10.5,-7.5" fill="none" stroke="#e63982" stroke-width="1.4" stroke-linejoin="round" />
+    <path d="M0,-1 C-1.8,-3.2 -4.5,-2.5 -4.5,0 C-4.5,2.2 0,4.2 0,5.2 C0,4.2 4.5,2.2 4.5,0 C4.5,-2.5 1.8,-3.2 0,-1 Z" fill="#e63982" />
+  </g>
 </svg>
