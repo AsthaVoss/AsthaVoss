@@ -25,6 +25,9 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
+      - name: Restore output-folder write access
+        run: chmod -R u+w dist
+
       - name: Generate GitHub statistics card
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -35,7 +38,6 @@ jobs:
           import urllib.request
           from pathlib import Path
           from xml.sax.saxutils import escape
-
           query = """query($login: String!) {
             user(login: $login) {
               repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {
@@ -102,8 +104,10 @@ jobs:
             </g>
             <rect x="0.5" y="0.5" width="499" height="194" rx="12" fill="none" stroke="#4a3c31" stroke-width="1"/>
           </svg>"""
-          Path("dist").mkdir(exist_ok=True)
-          Path("dist/github.svg").write_text(svg, encoding="utf-8")
+          output = Path("dist")
+          output.mkdir(exist_ok=True)
+          output.chmod(0o755)
+          (output / "github.svg").write_text(svg, encoding="utf-8")
           PY
 
       - name: Publish cards and contribution graph
