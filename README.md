@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-header.svg?v=2" alt="AsthaVoss — Physics student exploring astrophysics and scientific research" width="100%">
+  <img src="https://raw.githubusercontent.com/AsthaVoss/AsthaVoss/f50730a/assets/profile-header.svg" alt="AsthaVoss — Physics student exploring astrophysics and scientific research" width="100%">
 </p>
 
 <p align="center">
