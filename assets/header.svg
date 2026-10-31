@@ -1,77 +1,244 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300"
-     width="1200" height="300" role="img"
-     aria-label="Maziyar Panahi - Building on-device Medical AI. 5,098 models, 904M downloads all time, 6,023 followers on Hugging Face.">
-  <title>Maziyar Panahi - Building on-device Medical AI</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Nafisa Hossain - Building on-device Medical AI. 5,098 models, 904M downloads all time, 6,023 followers on Hugging Face.">
+  <title>Nafisa Hossain - Building on-device Medical AI</title>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1d1714"/>
-      <stop offset="55%" stop-color="#171210"/>
-      <stop offset="100%" stop-color="#221a14"/>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe6f2">
+        <animate attributeName="stop-color" values="#ffe6f2;#ffd9ec;#ffe6f2" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="55%" stop-color="#ffcce4">
+        <animate attributeName="stop-color" values="#ffcce4;#ffb8da;#ffcce4" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#ffb3d9">
+        <animate attributeName="stop-color" values="#ffb3d9;#ff99cc;#ffb3d9" dur="6s" repeatCount="indefinite" />
+      </stop>
     </linearGradient>
-    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#f7ddb4" stop-opacity="0"/>
-      <stop offset="45%" stop-color="#f7ddb4" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#f7ddb4" stop-opacity="0"/>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fff0f7" />
     </linearGradient>
-    <clipPath id="card">
-      <rect x="0" y="0" width="1200" height="300" rx="20"/>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e63982">
+        <animate attributeName="stop-color" values="#e63982;#ff66a3;#e63982" dur="3s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#ff80b5">
+        <animate attributeName="stop-color" values="#ff80b5;#e63982;#ff80b5" dur="3s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="bowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff85b8" />
+      <stop offset="100%" stop-color="#e63982" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e63982" stop-opacity="0" />
+      <stop offset="45%" stop-color="#e63982" stop-opacity="0.75">
+        <animate attributeName="offset" values="0.25;0.75;0.25" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#e63982" stop-opacity="0" />
+    </linearGradient>
+
+    <clipPath id="cardClip">
+      <rect x="0" y="0" width="1200" height="300" rx="20" />
     </clipPath>
   </defs>
 
-  <style><![CDATA[
-    .name   { font: 700 54px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #f5ece1; letter-spacing: -0.5px; }
-    .role   { font: 400 22px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #cbbdad; }
-    .tag    { font: 500 15px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #f7ddb4; letter-spacing: 0.6px; }
-    .stat-value { font: 700 40px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #f5ece1; }
-    .stat-label { font: 600 11px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #cbbdad; letter-spacing: 1.2px; }
-    .section { font: 700 12px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #f7ddb4; letter-spacing: 2.2px; }
-    .stamp  { font: 400 12px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #cbbdad; opacity: 0.65; }
+  <g clip-path="url(#cardClip)">
+    <rect x="0" y="0" width="1200" height="300" fill="url(#bgGrad)" />
 
-    /* Everything above is visible with no animation involved. Motion is only
-       ever additive: several renderers (GitHub's image proxy among them) draw
-       SVG-in-<img> as a static frame and never tick the animation clock, so
-       nothing may depend on a keyframe running to become visible. */
-    .ecg { animation: pulse 4s ease-in-out infinite; }
+    <circle cx="1120" cy="45" r="110" fill="#ffffff" fill-opacity="0.35">
+      <animate attributeName="r" values="105;122;105" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="fill-opacity" values="0.25;0.45;0.25" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="95" cy="250" r="95" fill="#ffffff" fill-opacity="0.3">
+      <animate attributeName="r" values="90;108;90" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="fill-opacity" values="0.2;0.4;0.2" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="620" cy="140" r="130" fill="#ffffff" fill-opacity="0.25">
+      <animate attributeName="r" values="120;140;120" dur="7s" repeatCount="indefinite" />
+    </circle>
 
-    @keyframes pulse {
-      0%, 100% { stroke-opacity: 0.22; }
-      50%      { stroke-opacity: 0.40; }
-    }
+    <rect x="10" y="10" width="1180" height="280" rx="14" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-dasharray="6,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="22" dur="2.5s" repeatCount="indefinite" />
+    </rect>
 
-    @media (prefers-reduced-motion: reduce) {
-      .ecg { animation: none; }
-    }
-  ]]></style>
-
-  <g clip-path="url(#card)">
-    <rect x="0" y="0" width="1200" height="300" fill="url(#bg)"/>
-
-    <!-- heartbeat trace across the lower third; band is y 238..278 -->
-    <path class="ecg" d="M -20 262 H 30 l 7 -24 l 8 40 l 7 -16 H 150 l 7 -24 l 8 40 l 7 -16 H 270 l 7 -24 l 8 40 l 7 -16 H 390 l 7 -24 l 8 40 l 7 -16 H 510 l 7 -24 l 8 40 l 7 -16 H 630 l 7 -24 l 8 40 l 7 -16 H 750 l 7 -24 l 8 40 l 7 -16 H 870 l 7 -24 l 8 40 l 7 -16 H 990 l 7 -24 l 8 40 l 7 -16 H 1110 l 7 -24 l 8 40 l 7 -16 H 1230 l 7 -24 l 8 40 l 7 -16 H 1220"
-          fill="none" stroke="#f7ddb4" stroke-opacity="0.28"
-          stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-    <rect x="0" y="297" width="1200" height="3" fill="url(#glow)"/>
-
-    <text class="name" x="60" y="118">Maziyar Panahi</text>
-    <!-- clears the descender on the 'y' in Maziyar -->
-    <rect x="62" y="146" width="54" height="3" rx="1.5" fill="#f7ddb4"/>
-    <text class="role" x="60" y="176">Building on-device Medical AI</text>
-    <text class="tag" x="60" y="212">Open, sovereign, deployable medical AI</text>
-
-    <line x1="740" y1="62" x2="740" y2="186" stroke="#4a3c31" stroke-width="1"/>
-    <text class="section" x="770" y="84">HUGGING FACE</text>
-    <g>
-    <text class="stat-value" x="808" y="142" text-anchor="middle">5,098</text>
-    <text class="stat-label" x="808" y="170" text-anchor="middle">MODELS</text>
-    <text class="stat-value" x="968" y="142" text-anchor="middle">904M</text>
-    <text class="stat-label" x="968" y="170" text-anchor="middle">DOWNLOADS · ALL TIME</text>
-    <text class="stat-value" x="1108" y="142" text-anchor="middle">6,023</text>
-    <text class="stat-label" x="1108" y="170" text-anchor="middle">FOLLOWERS</text>
+    <g transform="translate(640, 36.5)">
+      <g>
+        <path d="M0,-8.5 C1.2,-2.5 2.5,-1.3 8.5,0 C2.5,1.3 1.2,2.5 0,8.5 C-1.2,2.5 -2.5,1.3 -8.5,0 C-2.5,-1.3 -1.2,-2.5 0,-8.5 Z" fill="#ffffff" />
+        <animateTransform attributeName="transform" type="scale" values="0.6;1.25;0.6" dur="2.2s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite" />
+      </g>
     </g>
 
-    <!-- tucked under the stats, above the heartbeat band -->
-    <text class="stamp" x="1140" y="212" text-anchor="end">updated 31 Oct 2026</text>
+    <g transform="translate(1155, 30.5)">
+      <g>
+        <path d="M0,-6.5 C1,-2 2,-1 6.5,0 C2,1 1,2 0,6.5 C-1,2 -2,1 -6.5,0 C-2,-1 -1,-2 0,-6.5 Z" fill="#ffffff" />
+        <animateTransform attributeName="transform" type="scale" values="1.2;0.5;1.2" dur="1.8s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite" />
+      </g>
+    </g>
+
+    <g transform="translate(540, 77)">
+      <g>
+        <path d="M0,-5 C0.8,-1.5 1.5,-0.8 5,0 C1.5,0.8 0.8,1.5 0,5 C-0.8,1.5 -1.5,0.8 -5,0 C-1.5,-0.8 -0.8,-1.5 0,-5 Z" fill="#ffffff" />
+        <animateTransform attributeName="transform" type="scale" values="0.5;1.3;0.5" dur="2.6s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite" />
+      </g>
+    </g>
+
+    <g transform="translate(48, 37)">
+      <g>
+        <path d="M0,-5 C0.8,-1.5 1.5,-0.8 5,0 C1.5,0.8 0.8,1.5 0,5 C-0.8,1.5 -1.5,0.8 -5,0 C-1.5,-0.8 -0.8,-1.5 0,-5 Z" fill="#ffffff" />
+        <animateTransform attributeName="transform" type="scale" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+      </g>
+    </g>
+
+    <g transform="translate(605, 48)">
+      <g>
+        <path d="M0,-3 C-2.5,-6.5 -7,-6 -7,-2.5 C-7,1 0,4 0,5.5 C0,4 7,1 7,-2.5 C7,-6 2.5,-6.5 0,-3 Z" fill="#ff66a3" fill-opacity="0.55" />
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="3s" repeatCount="indefinite" />
+      </g>
+    </g>
+
+    <g transform="translate(1125, 39)">
+      <g>
+        <path d="M0,-3 C-2,-6 -6,-5.5 -6,-2.5 C-6,0.5 0,3 0,4.5 C0,3 6,0.5 6,-2.5 C6,-5.5 2,-6 0,-3 Z" fill="#ff66a3" fill-opacity="0.55" />
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="2.4s" repeatCount="indefinite" />
+      </g>
+    </g>
+
+    <path d="M -20 262 H 30 l 7 -24 l 8 40 l 7 -16 H 150 l 7 -24 l 8 40 l 7 -16 H 270 l 7 -24 l 8 40 l 7 -16 H 390 l 7 -24 l 8 40 l 7 -16 H 510 l 7 -24 l 8 40 l 7 -16 H 630 l 7 -24 l 8 40 l 7 -16 H 750 l 7 -24 l 8 40 l 7 -16 H 870 l 7 -24 l 8 40 l 7 -16 H 990 l 7 -24 l 8 40 l 7 -16 H 1110 l 7 -24 l 8 40 l 7 -16 H 1230" fill="none" stroke="#ffffff" stroke-opacity="0.65" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+
+    <path d="M -20 262 H 30 l 7 -24 l 8 40 l 7 -16 H 150 l 7 -24 l 8 40 l 7 -16 H 270 l 7 -24 l 8 40 l 7 -16 H 390 l 7 -24 l 8 40 l 7 -16 H 510 l 7 -24 l 8 40 l 7 -16 H 630 l 7 -24 l 8 40 l 7 -16 H 750 l 7 -24 l 8 40 l 7 -16 H 870 l 7 -24 l 8 40 l 7 -16 H 990 l 7 -24 l 8 40 l 7 -16 H 1110 l 7 -24 l 8 40 l 7 -16 H 1230" fill="none" stroke="#ff85b8" stroke-opacity="0.4" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+
+    <path d="M -20 262 H 30 l 7 -24 l 8 40 l 7 -16 H 150 l 7 -24 l 8 40 l 7 -16 H 270 l 7 -24 l 8 40 l 7 -16 H 390 l 7 -24 l 8 40 l 7 -16 H 510 l 7 -24 l 8 40 l 7 -16 H 630 l 7 -24 l 8 40 l 7 -16 H 750 l 7 -24 l 8 40 l 7 -16 H 870 l 7 -24 l 8 40 l 7 -16 H 990 l 7 -24 l 8 40 l 7 -16 H 1110 l 7 -24 l 8 40 l 7 -16 H 1230" pathLength="1000" stroke-dasharray="140 860" stroke-dashoffset="1000" fill="none" stroke="#e63982" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" from="1000" to="0" dur="4.5s" repeatCount="indefinite" />
+    </path>
+
+    <g transform="translate(157, 233)">
+      <g>
+        <path d="M0,-1 C-1.5,-3.5 -4.5,-3 -4.5,-0.5 C-4.5,2 0,4 0,5 C0,4 4.5,2 4.5,-0.5 C4.5,-3 1.5,-3.5 0,-1 Z" fill="#e63982" fill-opacity="0.7" />
+        <animateTransform attributeName="transform" type="scale" values="0.85;1.3;0.85" dur="1.5s" repeatCount="indefinite" />
+      </g>
+    </g>
+    <g transform="translate(517, 233)">
+      <g>
+        <path d="M0,-1 C-1.5,-3.5 -4.5,-3 -4.5,-0.5 C-4.5,2 0,4 0,5 C0,4 4.5,2 4.5,-0.5 C4.5,-3 1.5,-3.5 0,-1 Z" fill="#e63982" fill-opacity="0.7" />
+        <animateTransform attributeName="transform" type="scale" values="1.3;0.85;1.3" dur="1.5s" repeatCount="indefinite" />
+      </g>
+    </g>
+    <g transform="translate(877, 233)">
+      <g>
+        <path d="M0,-1 C-1.5,-3.5 -4.5,-3 -4.5,-0.5 C-4.5,2 0,4 0,5 C0,4 4.5,2 4.5,-0.5 C4.5,-3 1.5,-3.5 0,-1 Z" fill="#e63982" fill-opacity="0.7" />
+        <animateTransform attributeName="transform" type="scale" values="0.85;1.3;0.85" dur="1.5s" repeatCount="indefinite" />
+      </g>
+    </g>
+
+    <rect x="0" y="295" width="1200" height="5" fill="url(#glowGrad)" />
+
+    <g transform="translate(70, 51)">
+      <g>
+        <path d="M-4,1 L-10,11 L-4,9 L-1,3 Z" fill="#e63982" />
+        <path d="M4,1 L10,11 L4,9 L1,3 Z" fill="#e63982" />
+        <path d="M-1,-1 C-10,-9 -16,-1 -10,5 C-6,7 -2,3 -1,0 Z" fill="url(#bowGrad)" stroke="#b31b59" stroke-width="1.3" />
+        <path d="M1,-1 C10,-9 16,-1 10,5 C6,7 2,3 1,0 Z" fill="url(#bowGrad)" stroke="#b31b59" stroke-width="1.3" />
+        <circle cx="0" cy="0" r="3" fill="#ffe6f2" stroke="#b31b59" stroke-width="1.3" />
+        <animateTransform attributeName="transform" type="rotate" values="-6;6;-6" dur="3s" repeatCount="indefinite" />
+      </g>
+    </g>
+    <text x="92" y="56" fill="#d9387a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="2.2">MEDICAL AI · ON-DEVICE</text>
+
+    <text x="60" y="114" fill="#99144a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="800" letter-spacing="-0.5">Nafisa Hossain</text>
+
+    <rect x="62" y="140" width="85" height="3.5" rx="1.75" fill="url(#accentGrad)">
+      <animate attributeName="width" values="75;95;75" dur="3.5s" repeatCount="indefinite" />
+    </rect>
+    <circle cx="164" cy="141.75" r="2.2" fill="#ff66a3" />
+    <g transform="translate(175, 141.75)">
+      <g>
+        <path d="M0,-1.5 C-1.5,-3.5 -4,-3 -4,-0.7 C-4,1.3 0,3.3 0,4.3 C0,3.3 4,1.3 4,-0.7 C4,-3 1.5,-3.5 0,-1.5 Z" fill="#e63982" />
+        <animateTransform attributeName="transform" type="scale" values="0.9;1.25;0.9" dur="1.4s" repeatCount="indefinite" />
+      </g>
+    </g>
+    <circle cx="186" cy="141.75" r="2.2" fill="#ff66a3" />
+    <line x1="196" y1="141.75" x2="520" y2="141.75" stroke="#ff85b8" stroke-width="1.3" stroke-dasharray="4,4" />
+
+    <text x="60" y="174" fill="#b31b59" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="700">Building on-device Medical AI</text>
+
+    <rect x="60" y="191" width="340" height="32" rx="16" fill="url(#cardGrad)" stroke="#ff99c2" stroke-width="1.5" />
+    <g transform="translate(80, 207)">
+      <g>
+        <path d="M0,-2 C-1.8,-4.5 -5,-4 -5,-1 C-5,2 0,4.5 0,6 C0,4.5 5,2 5,-1 C5,-4 1.8,-4.5 0,-2 Z" fill="#e63982" />
+        <animateTransform attributeName="transform" type="scale" values="0.85;1.2;0.85" dur="1.2s" repeatCount="indefinite" />
+      </g>
+    </g>
+    <text x="94" y="212" fill="#d9387a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" letter-spacing="0.5">Open, sovereign, deployable medical AI</text>
+
+    <line x1="688" y1="48" x2="688" y2="215" stroke="#ff85b8" stroke-width="1.5" stroke-dasharray="5,5" />
+    <circle cx="688" cy="131" r="11" fill="#fff0f7" stroke="#ff66a3" stroke-width="1.5" />
+    <g transform="translate(688, 131)">
+      <g>
+        <path d="M0,-1.5 C-1.8,-4 -5,-3.5 -5,-0.5 C-5,2.5 0,5 0,6.5 C0,5 5,2.5 5,-0.5 C5,-3.5 1.8,-4 0,-1.5 Z" fill="#e63982" />
+        <animateTransform attributeName="transform" type="scale" values="0.85;1.2;0.85" dur="1.5s" repeatCount="indefinite" />
+      </g>
+    </g>
+
+    <g transform="translate(724, 59)">
+      <g>
+        <path d="M-4,1 L-9,10 L-4,8 L-1,3 Z" fill="#e63982" />
+        <path d="M4,1 L9,10 L4,8 L1,3 Z" fill="#e63982" />
+        <path d="M-1,-1 C-9,-8 -14,-1 -9,4 C-6,6 -2,3 -1,0 Z" fill="url(#bowGrad)" stroke="#b31b59" stroke-width="1.2" />
+        <path d="M1,-1 C9,-8 14,-1 9,4 C6,6 2,3 1,0 Z" fill="url(#bowGrad)" stroke="#b31b59" stroke-width="1.2" />
+        <circle cx="0" cy="0" r="2.8" fill="#ffe6f2" stroke="#b31b59" stroke-width="1.2" />
+        <animateTransform attributeName="transform" type="rotate" values="6;-6;6" dur="3s" repeatCount="indefinite" />
+      </g>
+    </g>
+    <text x="744" y="63" fill="#b31b59" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="800" letter-spacing="2.2">HUGGING FACE</text>
+    <line x1="875" y1="59" x2="1172" y2="59" stroke="#ff85b8" stroke-width="1.2" stroke-dasharray="3,4" />
+
+    <rect x="717" y="81" width="136" height="106" rx="14" fill="#ff99c2" fill-opacity="0.35" />
+    <rect x="714" y="77" width="136" height="106" rx="14" fill="url(#cardGrad)" stroke="#ffffff" stroke-width="2" />
+    <g transform="translate(782, 99.5)">
+      <g>
+        <path d="M0,-8.5 L2.5,-3 L8.5,-2.3 L4,1.5 L5.4,7.3 L0,4.1 L-5.4,7.3 L-4,1.5 L-8.5,-2.3 L-2.5,-3 Z" fill="#ffb3d9" stroke="#e63982" stroke-width="1.2" stroke-linejoin="round" />
+        <animateTransform attributeName="transform" type="rotate" values="-12;12;-12" dur="2.5s" repeatCount="indefinite" />
+      </g>
+    </g>
+    <text x="782" y="143" text-anchor="middle" fill="#99144a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="36" font-weight="800">5,098</text>
+    <text x="782" y="167" text-anchor="middle" fill="#d9387a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2">MODELS</text>
+
+    <rect x="867" y="81" width="168" height="106" rx="14" fill="#ff99c2" fill-opacity="0.35" />
+    <rect x="864" y="77" width="168" height="106" rx="14" fill="url(#cardGrad)" stroke="#ffffff" stroke-width="2" />
+    <g transform="translate(948, 98)">
+      <g>
+        <path d="M0,-4 C-3,-8 -8,-7 -8,-2.5 C-8,1.5 0,5 0,7 C0,5 8,1.5 8,-2.5 C8,-7 3,-8 0,-4 Z" fill="#ffb3d9" stroke="#e63982" stroke-width="1.2" stroke-linejoin="round" />
+        <animateTransform attributeName="transform" type="scale" values="0.88;1.22;0.88" dur="1.3s" repeatCount="indefinite" />
+      </g>
+    </g>
+    <text x="948" y="143" text-anchor="middle" fill="#99144a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="36" font-weight="800">904M</text>
+    <text x="948" y="167" text-anchor="middle" fill="#d9387a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1">DOWNLOADS · ALL TIME</text>
+
+    <rect x="1049" y="81" width="128" height="106" rx="14" fill="#ff99c2" fill-opacity="0.35" />
+    <rect x="1046" y="77" width="128" height="106" rx="14" fill="url(#cardGrad)" stroke="#ffffff" stroke-width="2" />
+    <g transform="translate(1110, 98)">
+      <g>
+        <circle cx="0" cy="-5" r="3.2" fill="#ffb3d9" stroke="#e63982" stroke-width="1.1" />
+        <circle cx="4.8" cy="-1.5" r="3.2" fill="#ffb3d9" stroke="#e63982" stroke-width="1.1" />
+        <circle cx="3" cy="4" r="3.2" fill="#ffb3d9" stroke="#e63982" stroke-width="1.1" />
+        <circle cx="-3" cy="4" r="3.2" fill="#ffb3d9" stroke="#e63982" stroke-width="1.1" />
+        <circle cx="-4.8" cy="-1.5" r="3.2" fill="#ffb3d9" stroke="#e63982" stroke-width="1.1" />
+        <circle cx="0" cy="0" r="2.4" fill="#fff0f7" stroke="#e63982" stroke-width="1" />
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite" />
+      </g>
+    </g>
+    <text x="1110" y="143" text-anchor="middle" fill="#99144a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="36" font-weight="800">6,023</text>
+    <text x="1110" y="167" text-anchor="middle" fill="#d9387a" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2">FOLLOWERS</text>
+
+    <text x="1172" y="212" text-anchor="end" fill="#b31b59" fill-opacity="0.75" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">updated 31 Oct 2026</text>
   </g>
-  <rect x="0.5" y="0.5" width="1199" height="299" rx="20"
-        fill="none" stroke="#4a3c31" stroke-width="1"/>
+
+  <rect x="1" y="1" width="1198" height="298" rx="20" fill="none" stroke="#ff66a3" stroke-width="2" />
 </svg>
