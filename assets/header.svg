@@ -1,77 +1,262 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300"
-     width="1200" height="300" role="img"
-     aria-label="Maziyar Panahi - Building on-device Medical AI. 5,098 models, 904M downloads all time, 6,023 followers on Hugging Face.">
-  <title>Maziyar Panahi - Building on-device Medical AI</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Nafisa Hossain - Midnight Stargazer and Cosmic Dreamweaver. 58 models, 28 downloads, 248 followers.">
+  <title>Nafisa Hossain - Midnight Stargazer and Cosmic Dreamweaver</title>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1d1714"/>
-      <stop offset="55%" stop-color="#171210"/>
-      <stop offset="100%" stop-color="#221a14"/>
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0418"/>
+      <stop offset="50%" stop-color="#1d0b38"/>
+      <stop offset="100%" stop-color="#33104d"/>
     </linearGradient>
-    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#f7ddb4" stop-opacity="0"/>
-      <stop offset="45%" stop-color="#f7ddb4" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#f7ddb4" stop-opacity="0"/>
+
+    <radialGradient id="pinkNebula" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff4da6" stop-opacity="0.32"/>
+      <stop offset="60%" stop-color="#cc33ff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#1d0b38" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff99cc" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#ff4da6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ff4da6" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="moonSurface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5fa"/>
+      <stop offset="55%" stop-color="#ffcce6"/>
+      <stop offset="100%" stop-color="#ff80bf"/>
     </linearGradient>
-    <clipPath id="card">
-      <rect x="0" y="0" width="1200" height="300" rx="20"/>
+
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff99cc"/>
+      <stop offset="50%" stop-color="#ff4da6"/>
+      <stop offset="100%" stop-color="#cc1973"/>
+    </linearGradient>
+
+    <linearGradient id="archCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#351459" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#160729" stop-opacity="0.94"/>
+    </linearGradient>
+
+    <linearGradient id="archCenter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4d1978" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#1f0938" stop-opacity="0.96"/>
+    </linearGradient>
+
+    <linearGradient id="roseGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff80bf"/>
+      <stop offset="50%" stop-color="#fff0f7"/>
+      <stop offset="100%" stop-color="#ff66b3"/>
+    </linearGradient>
+
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff80bf" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#260b40" stop-opacity="0.55"/>
+    </linearGradient>
+
+    <clipPath id="bannerClip">
+      <rect x="0" y="0" width="1200" height="300" rx="22"/>
     </clipPath>
   </defs>
 
-  <style><![CDATA[
-    .name   { font: 700 54px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #f5ece1; letter-spacing: -0.5px; }
-    .role   { font: 400 22px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #cbbdad; }
-    .tag    { font: 500 15px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #f7ddb4; letter-spacing: 0.6px; }
-    .stat-value { font: 700 40px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #f5ece1; }
-    .stat-label { font: 600 11px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #cbbdad; letter-spacing: 1.2px; }
-    .section { font: 700 12px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #f7ddb4; letter-spacing: 2.2px; }
-    .stamp  { font: 400 12px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #cbbdad; opacity: 0.65; }
+  <g clip-path="url(#bannerClip)">
+    <rect x="0" y="0" width="1200" height="300" fill="url(#nightSky)"/>
 
-    /* Everything above is visible with no animation involved. Motion is only
-       ever additive: several renderers (GitHub's image proxy among them) draw
-       SVG-in-<img> as a static frame and never tick the animation clock, so
-       nothing may depend on a keyframe running to become visible. */
-    .ecg { animation: pulse 4s ease-in-out infinite; }
+    <ellipse cx="560" cy="150" rx="340" ry="180" fill="url(#pinkNebula)"/>
+    <ellipse cx="980" cy="145" rx="260" ry="160" fill="url(#pinkNebula)"/>
+    <circle cx="195" cy="155" r="145" fill="url(#moonGlow)"/>
 
-    @keyframes pulse {
-      0%, 100% { stroke-opacity: 0.22; }
-      50%      { stroke-opacity: 0.40; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .ecg { animation: none; }
-    }
-  ]]></style>
-
-  <g clip-path="url(#card)">
-    <rect x="0" y="0" width="1200" height="300" fill="url(#bg)"/>
-
-    <!-- heartbeat trace across the lower third; band is y 238..278 -->
-    <path class="ecg" d="M -20 262 H 30 l 7 -24 l 8 40 l 7 -16 H 150 l 7 -24 l 8 40 l 7 -16 H 270 l 7 -24 l 8 40 l 7 -16 H 390 l 7 -24 l 8 40 l 7 -16 H 510 l 7 -24 l 8 40 l 7 -16 H 630 l 7 -24 l 8 40 l 7 -16 H 750 l 7 -24 l 8 40 l 7 -16 H 870 l 7 -24 l 8 40 l 7 -16 H 990 l 7 -24 l 8 40 l 7 -16 H 1110 l 7 -24 l 8 40 l 7 -16 H 1230 l 7 -24 l 8 40 l 7 -16 H 1220"
-          fill="none" stroke="#f7ddb4" stroke-opacity="0.28"
-          stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-    <rect x="0" y="297" width="1200" height="3" fill="url(#glow)"/>
-
-    <text class="name" x="60" y="118">Maziyar Panahi</text>
-    <!-- clears the descender on the 'y' in Maziyar -->
-    <rect x="62" y="146" width="54" height="3" rx="1.5" fill="#f7ddb4"/>
-    <text class="role" x="60" y="176">Building on-device Medical AI</text>
-    <text class="tag" x="60" y="212">Open, sovereign, deployable medical AI</text>
-
-    <line x1="740" y1="62" x2="740" y2="186" stroke="#4a3c31" stroke-width="1"/>
-    <text class="section" x="770" y="84">HUGGING FACE</text>
-    <g>
-    <text class="stat-value" x="808" y="142" text-anchor="middle">5,098</text>
-    <text class="stat-label" x="808" y="170" text-anchor="middle">MODELS</text>
-    <text class="stat-value" x="968" y="142" text-anchor="middle">904M</text>
-    <text class="stat-label" x="968" y="170" text-anchor="middle">DOWNLOADS · ALL TIME</text>
-    <text class="stat-value" x="1108" y="142" text-anchor="middle">6,023</text>
-    <text class="stat-label" x="1108" y="170" text-anchor="middle">FOLLOWERS</text>
+    <g fill="#ffffff">
+      <circle cx="45" cy="65" r="1.3" opacity="0.7"/>
+      <circle cx="95" cy="38" r="1.8" opacity="0.5"/>
+      <circle cx="310" cy="48" r="1.5" opacity="0.8"/>
+      <circle cx="355" cy="95" r="1.2" opacity="0.6"/>
+      <circle cx="420" cy="35" r="2" opacity="0.8"/>
+      <circle cx="680" cy="32" r="1.5" opacity="0.7"/>
+      <circle cx="755" cy="70" r="1.8" opacity="0.6"/>
+      <circle cx="780" cy="245" r="1.4" opacity="0.7"/>
+      <circle cx="340" cy="260" r="1.6" opacity="0.5"/>
+      <circle cx="1175" cy="85" r="1.5" opacity="0.8"/>
     </g>
 
-    <!-- tucked under the stats, above the heartbeat band -->
-    <text class="stamp" x="1140" y="212" text-anchor="end">updated 31 Oct 2026</text>
+    <g opacity="0.75" transform="translate(350,25)">
+      <line x1="0" y1="0" x2="-65" y2="-22" stroke="url(#roseGold)" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.5" fill="#ffffff"/>
+    </g>
+
+    <g stroke="#ff99cc" stroke-opacity="0.35" stroke-width="1" fill="none" stroke-dasharray="3,4">
+      <path d="M 0,8 Q 150,48 300,8 Q 450,48 600,8 Q 750,48 900,8 Q 1050,48 1200,8"/>
+      <path d="M 0,18 Q 150,62 300,18 Q 450,62 600,18 Q 750,62 900,18 Q 1050,62 1200,18" stroke-opacity="0.2"/>
+    </g>
+
+    <g stroke="#ffb3d9" stroke-opacity="0.5" stroke-width="1">
+      <line x1="300" y1="8" x2="300" y2="38"/>
+      <line x1="600" y1="8" x2="600" y2="34"/>
+      <line x1="900" y1="8" x2="900" y2="38"/>
+    </g>
+    <path d="M300,32 C301.2,36 302,36.8 306,38 C302,39.2 301.2,40 300,44 C298.8,40 298,39.2 294,38 C298,36.8 298.8,36 300,32 Z" fill="#ff99cc"/>
+    <path d="M600,28 C601.2,32 602,32.8 606,34 C602,35.2 601.2,36 600,40 C598.8,36 598,35.2 594,34 C598,32.8 598.8,32 600,28 Z" fill="#fff0f7"/>
+    <path d="M900,32 C901.2,36 902,36.8 906,38 C902,39.2 901.2,40 900,44 C898.8,40 898,39.2 894,38 C898,36.8 898.8,36 900,32 Z" fill="#ff99cc"/>
+
+    <path d="M -20,300 Q 30,255 95,275 Q 150,240 225,272 Q 285,252 340,285 Q 410,265 470,300 Z" fill="url(#cloudGrad)"/>
+    <path d="M 740,300 Q 810,262 880,282 Q 950,248 1030,276 Q 1110,245 1175,278 Q 1210,265 1230,300 Z" fill="url(#cloudGrad)"/>
+
+    <g transform="translate(190, 152)">
+      <g>
+        <path d="M -10,-98 A 98,98 0 1,0 85,48 A 78,82 0 1,1 -10,-98 Z" fill="url(#moonSurface)" stroke="#ff99cc" stroke-width="1.5"/>
+
+        <path d="M -18,-84 A 86,86 0 1,0 68,45" fill="none" stroke="#ff4da6" stroke-opacity="0.4" stroke-width="1.2" stroke-dasharray="3,3"/>
+
+        <line x1="-10" y1="-98" x2="-10" y2="-42" stroke="#ffcce6" stroke-width="1.2" stroke-dasharray="2,2"/>
+        <g transform="translate(-10, -42)">
+          <g transform="rotate(-12)">
+            <path d="M0,-9 C1.8,-2.5 2.5,-1.8 9,0 C2.5,1.8 1.8,2.5 0,9 C-1.8,2.5 -2.5,1.8 -9,0 C-2.5,-1.8 -1.8,-2.5 0,-9 Z" fill="#fff0f7" stroke="#ff4da6" stroke-width="1"/>
+          </g>
+        </g>
+
+        <g transform="translate(-74, 12) rotate(-18)">
+          <path d="M-6,6 L-18,32 L-6,26 L0,10 Z" fill="#e61973"/>
+          <path d="M6,6 L18,32 L6,26 L0,10 Z" fill="#e61973"/>
+          <path d="M-2,0 C-18,-14 -28,2 -16,12 C-8,16 -2,8 -1,2 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1.2"/>
+          <path d="M2,0 C18,-14 28,2 16,12 C8,16 2,8 1,2 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1.2"/>
+          <circle cx="0" cy="2" r="5" fill="#fff0f7" stroke="#cc1973" stroke-width="1.2"/>
+        </g>
+
+        <g transform="translate(18, 52)">
+          <path d="M-12,18 C-14,4 -8,-4 0,-4 C8,-4 14,4 12,18 Z" fill="#23093d" stroke="#ff99cc" stroke-width="1.2"/>
+          <circle cx="0" cy="-10" r="10.5" fill="#23093d" stroke="#ff99cc" stroke-width="1.2"/>
+          <polygon points="-9,-16 -12,-27 -2,-19" fill="#23093d" stroke="#ff99cc" stroke-width="1.2" stroke-linejoin="round"/>
+          <polygon points="9,-16 12,-27 2,-19" fill="#23093d" stroke="#ff99cc" stroke-width="1.2" stroke-linejoin="round"/>
+          <g transform="translate(8, -20) rotate(15)">
+            <circle cx="0" cy="0" r="2" fill="#fff0f7"/>
+            <path d="M0,0 L-5,-3 L-5,3 Z" fill="#ff4da6"/>
+            <path d="M0,0 L5,-3 L5,3 Z" fill="#ff4da6"/>
+          </g>
+          <path d="M10,16 Q26,18 28,6 Q30,-2 23,0" fill="none" stroke="#ff99cc" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M0,-28 C-1.5,-30.5 -4.5,-30 -4.5,-27.5 C-4.5,-25 0,-23 0,-22 C0,-23 4.5,-25 4.5,-27.5 C4.5,-30 1.5,-30.5 0,-28 Z" fill="#ff4da6" opacity="0.7"/>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(82, 82)">
+      <path d="M0,-8 C1.5,-2 2,-1.5 8,0 C2,1.5 1.5,2 0,8 C-1.5,2 -2,1.5 -8,0 C-2,-1.5 -1.5,-2 0,-8 Z" fill="#fff0f7" transform="scale(0.5)"/>
+    </g>
+    <g transform="translate(285, 108)">
+      <path d="M0,-7 C1.2,-1.8 1.8,-1.2 7,0 C1.8,1.2 1.2,1.8 0,7 C-1.2,1.8 -1.8,1.2 -7,0 C-1.8,-1.2 -1.2,-1.8 0,-7 Z" fill="#ff80bf" transform="scale(1.1)"/>
+    </g>
+
+    <g transform="translate(555, 62)">
+      <rect x="-165" y="-14" width="330" height="26" rx="13" fill="#260b40" fill-opacity="0.85" stroke="#ff66b3" stroke-width="1.2"/>
+      <path d="M-146,-1 C-147.5,-3 -150,-2.5 -150,-0.5 C-150,1.5 -146,3.5 -146,4.5 C-146,3.5 -142,1.5 -142,-0.5 C-142,-2.5 -144.5,-3 -146,-1 Z" fill="#ff66b3"/>
+      <text x="0" y="3" text-anchor="middle" fill="#ffb3d9" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="2.4">STARGAZER · COSMIC DREAMWEAVER</text>
+      <path d="M146,-1 C144.5,-3 142,-2.5 142,-0.5 C142,1.5 146,3.5 146,4.5 C146,3.5 150,1.5 150,-0.5 C150,-2.5 147.5,-3 146,-1 Z" fill="#ff66b3"/>
+    </g>
+
+    <text x="557" y="132" text-anchor="middle" fill="#ff1a8c" fill-opacity="0.35" font-family="Georgia, Times New Roman, serif" font-size="54" font-weight="700" letter-spacing="0.5">Nafisa Hossain</text>
+    <text x="555" y="130" text-anchor="middle" fill="#fff5fa" font-family="Georgia, Times New Roman, serif" font-size="54" font-weight="700" letter-spacing="0.5">Nafisa Hossain</text>
+
+    <g transform="translate(555, 155)">
+      <line x1="-185" y1="0" x2="-32" y2="0" stroke="url(#roseGold)" stroke-width="1.5"/>
+      <line x1="32" y1="0" x2="185" y2="0" stroke="url(#roseGold)" stroke-width="1.5"/>
+      <circle cx="-32" cy="0" r="2.5" fill="#ff99cc"/>
+      <circle cx="32" cy="0" r="2.5" fill="#ff99cc"/>
+      <path d="M-8,-2 C-18,-9 -24,-2 -16,3 C-22,5 -16,10 -7,4 Z" fill="#fff0f7"/>
+      <path d="M8,-2 C18,-9 24,-2 16,3 C22,5 16,10 7,4 Z" fill="#fff0f7"/>
+      <g transform="scale(0.9)">
+        <path d="M0,-3 C-3,-7.5 -9,-6.5 -9,-1.5 C-9,3.5 0,7.5 0,9.5 C0,7.5 9,3.5 9,-1.5 C9,-6.5 3,-7.5 0,-3 Z" fill="#ff4da6" stroke="#fff0f7" stroke-width="1.2"/>
+      </g>
+    </g>
+
+    <text x="555" y="187" text-anchor="middle" fill="#ffcce6" font-family="Georgia, Times New Roman, serif" font-style="italic" font-size="18.5" letter-spacing="0.4">"Weaving stardust, pink nebulas &amp; midnight constellations"</text>
+
+    <g transform="translate(362, 208)">
+      <rect x="0" y="0" width="118" height="28" rx="14" fill="#2d114d" stroke="#ff80bf" stroke-width="1.2"/>
+      <circle cx="18" cy="14" r="4" fill="#ff99cc"/>
+      <text x="66" y="18" text-anchor="middle" fill="#fff0f7" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11.5" font-weight="700">Astrophysics</text>
+    </g>
+
+    <g transform="translate(492, 208)">
+      <rect x="0" y="0" width="126" height="28" rx="14" fill="#2d114d" stroke="#ff80bf" stroke-width="1.2"/>
+      <path d="M18,10 L19.5,13 L23,13.5 L20.5,16 L21,19.5 L18,17.8 L15,19.5 L15.5,16 L13,13.5 L16.5,13 Z" fill="#ff66b3"/>
+      <text x="70" y="18" text-anchor="middle" fill="#fff0f7" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11.5" font-weight="700">Dreamy AI</text>
+    </g>
+
+    <g transform="translate(630, 208)">
+      <rect x="0" y="0" width="120" height="28" rx="14" fill="#2d114d" stroke="#ff80bf" stroke-width="1.2"/>
+      <path d="M18,12 C16.8,10.2 14.5,10.5 14.5,12.5 C14.5,14.5 18,16.5 18,17.5 C18,16.5 21.5,14.5 21.5,12.5 C21.5,10.5 19.2,10.2 18,12 Z" fill="#ff80bf"/>
+      <text x="67" y="18" text-anchor="middle" fill="#fff0f7" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11.5" font-weight="700">Night Sky</text>
+    </g>
+
+    <g transform="translate(800, 62)">
+      <g>
+        <path d="M 0,52 A 52,52 0 0,1 104,52 L 104,162 A 14,14 0 0,1 90,176 L 14,176 A 14,14 0 0,1 0,162 Z" fill="url(#archCard)" stroke="#ff80bf" stroke-width="1.6"/>
+        <path d="M 6,52 A 46,46 0 0,1 98,52 L 98,158 A 9,9 0 0,1 89,167 L 15,167 A 9,9 0 0,1 6,158 Z" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="3,3"/>
+        <g transform="translate(52, 0)">
+          <path d="M-2,2 L-7,11 L-2,9 L1,4 Z" fill="#e61973"/>
+          <path d="M2,2 L7,11 L2,9 -1,4 Z" fill="#e61973"/>
+          <path d="M-1,0 C-9,-7 -14,0 -9,5 C-5,7 -1,4 -1,1 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1"/>
+          <path d="M1,0 C9,-7 14,0 9,5 C5,7 1,4 1,1 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1"/>
+          <circle cx="0" cy="1" r="2.5" fill="#fff0f7"/>
+        </g>
+        <g transform="translate(52, 46)">
+          <path d="M0,-12 C2,-3.5 3.5,-2 12,0 C3.5,2 2,3.5 0,12 C-2,3.5 -3.5,2 -12,0 C-3.5,-2 -2,-3.5 0,-12 Z" fill="#ff99cc" stroke="#fff0f7" stroke-width="1"/>
+          <circle cx="0" cy="0" r="2.5" fill="#ffffff"/>
+        </g>
+        <text x="52" y="114" text-anchor="middle" fill="#fff5fa" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="34" font-weight="800">58</text>
+        <line x1="24" y1="128" x2="80" y2="128" stroke="#ff80bf" stroke-opacity="0.4" stroke-width="1"/>
+        <text x="52" y="148" text-anchor="middle" fill="#ff99cc" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.5">MODELS</text>
+      </g>
+    </g>
+
+    <g transform="translate(922, 48)">
+      <g>
+        <path d="M 0,54 A 54,54 0 0,1 108,54 L 108,176 A 14,14 0 0,1 94,190 L 14,190 A 14,14 0 0,1 0,176 Z" fill="url(#archCenter)" stroke="#ffb3d9" stroke-width="2"/>
+        <path d="M 6,54 A 48,48 0 0,1 102,54 L 102,172 A 9,9 0 0,1 93,181 L 15,181 A 9,9 0 0,1 6,172 Z" fill="none" stroke="#ff99cc" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="3,3"/>
+        <g transform="translate(54, 0)">
+          <path d="M-3,2 L-9,13 L-3,10 L1,4 Z" fill="#e61973"/>
+          <path d="M3,2 L9,13 L3,10 -1,4 Z" fill="#e61973"/>
+          <path d="M-1,0 C-11,-8 -16,0 -10,6 C-6,8 -1,4 -1,1 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1.1"/>
+          <path d="M1,0 C11,-8 16,0 10,6 C6,8 1,4 1,1 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1.1"/>
+          <circle cx="0" cy="1" r="3" fill="#fff0f7"/>
+        </g>
+        <g transform="translate(54, 48)">
+          <ellipse cx="0" cy="0" rx="15" ry="5" fill="none" stroke="#fff0f7" stroke-width="1.4" transform="rotate(-22)"/>
+          <circle cx="0" cy="0" r="7.5" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1.2"/>
+        </g>
+        <text x="54" y="122" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="36" font-weight="800">28</text>
+        <line x1="22" y1="136" x2="86" y2="136" stroke="#ff99cc" stroke-opacity="0.5" stroke-width="1"/>
+        <text x="54" y="156" text-anchor="middle" fill="#ffcce6" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.4">DOWNLOADS</text>
+        <text x="54" y="170" text-anchor="middle" fill="#ff80bf" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.2">ALL TIME</text>
+      </g>
+    </g>
+
+    <g transform="translate(1048, 62)">
+      <g>
+        <path d="M 0,52 A 52,52 0 0,1 104,52 L 104,162 A 14,14 0 0,1 90,176 L 14,176 A 14,14 0 0,1 0,162 Z" fill="url(#archCard)" stroke="#ff80bf" stroke-width="1.6"/>
+        <path d="M 6,52 A 46,46 0 0,1 98,52 L 98,158 A 9,9 0 0,1 89,167 L 15,167 A 9,9 0 0,1 6,158 Z" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="3,3"/>
+        <g transform="translate(52, 0)">
+          <path d="M-2,2 L-7,11 L-2,9 L1,4 Z" fill="#e61973"/>
+          <path d="M2,2 L7,11 L2,9 -1,4 Z" fill="#e61973"/>
+          <path d="M-1,0 C-9,-7 -14,0 -9,5 C-5,7 -1,4 -1,1 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1"/>
+          <path d="M1,0 C9,-7 14,0 9,5 C5,7 1,4 1,1 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1"/>
+          <circle cx="0" cy="1" r="2.5" fill="#fff0f7"/>
+        </g>
+        <g transform="translate(52, 46)">
+          <circle cx="0" cy="-6" r="4" fill="#ff99cc" stroke="#fff0f7" stroke-width="1"/>
+          <circle cx="5.7" cy="-1.8" r="4" fill="#ff99cc" stroke="#fff0f7" stroke-width="1"/>
+          <circle cx="3.5" cy="4.8" r="4" fill="#ff99cc" stroke="#fff0f7" stroke-width="1"/>
+          <circle cx="-3.5" cy="4.8" r="4" fill="#ff99cc" stroke="#fff0f7" stroke-width="1"/>
+          <circle cx="-5.7" cy="-1.8" r="4" fill="#ff99cc" stroke="#fff0f7" stroke-width="1"/>
+          <circle cx="0" cy="0" r="2.8" fill="#fff5fa"/>
+        </g>
+        <text x="52" y="114" text-anchor="middle" fill="#fff5fa" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="34" font-weight="800">248</text>
+        <line x1="24" y1="128" x2="80" y2="128" stroke="#ff80bf" stroke-opacity="0.4" stroke-width="1"/>
+        <text x="52" y="148" text-anchor="middle" fill="#ff99cc" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.5">FOLLOWERS</text>
+      </g>
+    </g>
+
+    <text x="976" y="268" text-anchor="middle" fill="#ffb3d9" fill-opacity="0.85" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="2">✦ HUGGING FACE SANCTUARY ✦</text>
+
+    <rect x="8" y="8" width="1184" height="284" rx="16" fill="none" stroke="#ff99cc" stroke-opacity="0.4" stroke-width="1.2"/>
   </g>
-  <rect x="0.5" y="0.5" width="1199" height="299" rx="20"
-        fill="none" stroke="#4a3c31" stroke-width="1"/>
+
+  <rect x="1" y="1" width="1198" height="298" rx="22" fill="none" stroke="url(#roseGold)" stroke-width="2"/>
 </svg>
