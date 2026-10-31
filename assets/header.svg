@@ -222,7 +222,7 @@
         <path d="M 6,52 A 46,46 0 0,1 98,52 L 98,158 A 9,9 0 0,1 89,167 L 15,167 A 9,9 0 0,1 6,158 Z" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="3,3" />
         <g transform="translate(52, 0)">
           <path d="M-2,2 L-7,11 L-2,9 L1,4 Z" fill="#e61973" />
-          <path d="M2,2 L7,11 L2,9 -1,4 Z" fill="#e61973" />
+          <path d="M2,2 L7,11 L2,9 L-1,4 Z" fill="#e61973" />
           <path d="M-1,0 C-9,-7 -14,0 -9,5 C-5,7 -1,4 -1,1 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1" />
           <path d="M1,0 C9,-7 14,0 9,5 C5,7 1,4 1,1 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1" />
           <circle cx="0" cy="1" r="2.5" fill="#fff0f7" />
@@ -244,7 +244,7 @@
         <path d="M 6,54 A 48,48 0 0,1 102,54 L 102,172 A 9,9 0 0,1 93,181 L 15,181 A 9,9 0 0,1 6,172 Z" fill="none" stroke="#ff99cc" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="3,3" />
         <g transform="translate(54, 0)">
           <path d="M-3,2 L-9,13 L-3,10 L1,4 Z" fill="#e61973" />
-          <path d="M3,2 L9,13 L3,10 -1,4 Z" fill="#e61973" />
+          <path d="M3,2 L9,13 L3,10 L-1,4 Z" fill="#e61973" />
           <path d="M-1,0 C-11,-8 -16,0 -10,6 C-6,8 -1,4 -1,1 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1.1" />
           <path d="M1,0 C11,-8 16,0 10,6 C6,8 1,4 1,1 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1.1" />
           <circle cx="0" cy="1" r="3" fill="#fff0f7" />
@@ -267,7 +267,7 @@
         <path d="M 6,52 A 46,46 0 0,1 98,52 L 98,158 A 9,9 0 0,1 89,167 L 15,167 A 9,9 0 0,1 6,158 Z" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="3,3" />
         <g transform="translate(52, 0)">
           <path d="M-2,2 L-7,11 L-2,9 L1,4 Z" fill="#e61973" />
-          <path d="M2,2 L7,11 L2,9 -1,4 Z" fill="#e61973" />
+          <path d="M2,2 L7,11 L2,9 L-1,4 Z" fill="#e61973" />
           <path d="M-1,0 C-9,-7 -14,0 -9,5 C-5,7 -1,4 -1,1 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1" />
           <path d="M1,0 C9,-7 14,0 9,5 C5,7 1,4 1,1 Z" fill="url(#ribbonGrad)" stroke="#fff0f7" stroke-width="1" />
           <circle cx="0" cy="1" r="2.5" fill="#fff0f7" />
