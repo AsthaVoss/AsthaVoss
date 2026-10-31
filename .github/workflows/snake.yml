@@ -1,12 +1,14 @@
-name: Generate contribution snake
+name: Generate profile cards
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "17 4 * * *"
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
+    paths:
+      - "README.md"
+      - ".github/workflows/snake.yml"
 
 permissions:
   contents: write
@@ -22,7 +24,89 @@ jobs:
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-      - name: Publish to output branch
+
+      - name: Generate GitHub statistics card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+          from pathlib import Path
+          from xml.sax.saxutils import escape
+
+          query = """query($login: String!) {
+            user(login: $login) {
+              repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {
+                totalCount
+                nodes { stargazerCount }
+              }
+              contributionsCollection {
+                totalCommitContributions
+                totalPullRequestContributions
+                contributionCalendar { totalContributions }
+              }
+            }
+          }"""
+          body = json.dumps({"query": query, "variables": {"login": "AsthaVoss"}}).encode()
+          request = urllib.request.Request(
+              "https://api.github.com/graphql", data=body,
+              headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}",
+                       "Content-Type": "application/json",
+                       "User-Agent": "AsthaVoss-profile-card/1.0"})
+          with urllib.request.urlopen(request, timeout=45) as response:
+              payload = json.loads(response.read().decode())
+          if payload.get("errors") or not payload.get("data", {}).get("user"):
+              raise SystemExit("GitHub GraphQL did not return profile statistics")
+          user = payload["data"]["user"]
+          collection = user["contributionsCollection"]
+          stats = {
+              "stars": sum(repo["stargazerCount"] for repo in user["repositories"]["nodes"]),
+              "contributions": collection["contributionCalendar"]["totalContributions"],
+              "commits": collection["totalCommitContributions"],
+              "pulls": collection["totalPullRequestContributions"],
+          }
+          labels = [(stats["stars"], "STARS EARNED"),
+                    (stats["contributions"], "CONTRIBUTIONS · 1Y"),
+                    (stats["commits"], "COMMITS · 1Y"),
+                    (stats["pulls"], "PULL REQUESTS · 1Y")]
+          markup = []
+          columns = [28, 268]
+          rows = [(96, 116), (156, 176)]
+          for index, (value, label) in enumerate(labels):
+              x = columns[index % 2]
+              value_y, label_y = rows[index // 2]
+              markup.append(f'<text class="v" x="{x}" y="{value_y}">{value:,}</text>')
+              markup.append(f'<text class="l" x="{x}" y="{label_y}">{label}</text>')
+          title = (f'GitHub: {stats["stars"]:,} stars earned, '
+                   f'{stats["contributions"]:,} contributions in the last year.')
+          svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195" width="500" height="195" role="img" aria-label="{escape(title)}">
+            <title>{escape(title)}</title>
+            <defs>
+              <linearGradient id="gh-bg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#1d1714"/><stop offset="100%" stop-color="#171210"/>
+              </linearGradient>
+              <clipPath id="gh-card"><rect width="500" height="195" rx="12"/></clipPath>
+            </defs>
+            <style><![CDATA[
+              .h {{ font: 700 13px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #f7ddb4; letter-spacing: 2px; }}
+              .v {{ font: 700 30px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #f5ece1; }}
+              .l {{ font: 600 11px 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #cbbdad; letter-spacing: 1.3px; }}
+            ]]></style>
+            <g clip-path="url(#gh-card)">
+              <rect width="500" height="195" fill="url(#gh-bg)"/>
+              <text class="h" x="28" y="40">GITHUB</text>
+              <rect x="28" y="52" width="40" height="2" rx="1" fill="#f7ddb4"/>
+              {''.join(markup)}
+            </g>
+            <rect x="0.5" y="0.5" width="499" height="194" rx="12" fill="none" stroke="#4a3c31" stroke-width="1"/>
+          </svg>"""
+          Path("dist").mkdir(exist_ok=True)
+          Path("dist/github.svg").write_text(svg, encoding="utf-8")
+          PY
+
+      - name: Publish cards and contribution graph
         uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
